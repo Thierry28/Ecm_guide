@@ -1,0 +1,178 @@
+# Main MkDocs Config file
+
+# Navigation
+nav:
+  - Home: "index.md"
+  - Changelog: "CHANGELOG.md"
+  - Donate: "donation.md"
+  - Guides & Tools:
+      - Better Terminal Experience: "guides/BetterTerminal.md"
+      - Pi-Hole With DNS Over HTTPS: "guides/pihole_dns.md"
+      - Synology DSM: "guides/synology.md"
+      - Wifi QR Image Generator: "guides/wifiQrGenerator.md"
+      - Ubiquiti EdgeRouter & Unifi: "guides/ubiquiti.md"
+      - Gmail Markas Read: "guides/gmailMarkAsRead.md"
+      - Raspberry Pi 3 Tor Access Point: "raspberryPi/TOR-Pi.md"
+      - Useful Links & Tools: "guides/usefulLinks_Tools.md"
+  - Linux:
+      - General: "linux/general/general.md"
+      - SSH Service Security: "linux/SSH_Service_Security.md"
+      - Centos 7: "linux/centos7.md"
+      - Centos 8: "linux/centos8.md"
+      - Ubuntu: "linux/ubuntu.md"
+      - Files: "linux/general/files.md"
+      - Memory & Swap: "linux/general/memorySwap.md"
+      - Linux LVM Partitions: "linux/lvm.md"
+      - Linux Services:
+          - cPanel & WHM: "linux/services/cpanel.md"
+          - CSF Firewall: "linux/services/csf.md"
+          - Nginx: "linux/services/nginx.md"
+          - Apache: "linux/services/apache.md"
+          - Sophos Firewall: "linux/services/sophos.md"
+          - Wordpress: "linux/services/wordpress.md"
+          - Esxi: "linux/services/esxi.md"
+          - Plesk: "linux/services/plesk.md"
+          - Postfix: "linux/services/postfix.md"
+  - macOS:
+      - General: "macOS/general.md"
+      - UI Tweaks: "macOS/ui.md"
+      - System Tweaks: "macOS/system.md"
+      - Applications Tweaks: "macOS/applications.md"
+      - BrewUp - macOS Auto Update: "macOS/brewup.md"
+      - Python macOS The Right Way: "macOS/pythonTheRightWay.md"
+      - Better Terminal Experience: "guides/BetterTerminal.md"
+  - Raspberry Pi:
+      - General: "raspberryPi/piGeneral.md"
+      - Raspberry Pi 3 Tor Access Point: "raspberryPi/TOR-Pi.md"
+      - Raspberry Pi Magic Mirror: "raspberryPi/MagicMirror.md"
+  - Development:
+      - Git: "development/git.md"
+      - Docker: "development/dockerGeneral.md"
+      - Python: "development/python.md"
+      - Ruby: "development/ruby.md"
+      - npm & node: "development/npm.md"
+      - Personal Docker Containers: "development/dockerContainers.md"
+  - Windows:
+      - Windows General: "windows/windowsGeneral.md"
+      - Windows Guides and How-To: "windows/windowsGuides.md"
+  - Penetration-Testing:
+      - General: "penTesting/general.md"
+      - IDD Generator & Validator: "penTesting/iddGenerator.md"
+      - Click-Jacking Test: "penTesting/clickJacking.md"
+      - Android Penetration Testing: "penTesting/androidPT.md"
+      - Kali Linux Modifications: "penTesting/kaliLinux.md"
+  - Markdown CheatSheet:
+      - Welcome: "markdownCheatSheet/welcome.md"
+      - Headings: "markdownCheatSheet/headings.md"
+      - Emphasis: "markdownCheatSheet/emphasis.md"
+      - Line Breaks: "markdownCheatSheet/lineBreaks.md"
+      - Lists: "markdownCheatSheet/lists.md"
+      - Tables: "markdownCheatSheet/tables.md"
+      - Links: "markdownCheatSheet/links.md"
+      - Images: "markdownCheatSheet/images.md"
+      - Admonition: "markdownCheatSheet/admonition.md"
+      - Block Quotes: "markdownCheatSheet/blockQuotes.md"
+      - Emojis List: "markdownCheatSheet/emoji.md"
+      - Embed External Sources:
+          - Gists: "markdownCheatSheet/embedGists.md"
+          - YouTube Videos: "markdownCheatSheet/embedYouTubeVideos.md"
+          - Lucid Chart: "markdownCheatSheet/embedLucidChart.md"
+      - Simple Template: "markdownCheatSheet/template.md"
+      - Extra:
+          - Metadata Per Page: "markdownCheatSheet/metaData.md"
+
+# Site information
+site_name: "3os.org"
+site_url: "https://3os.org/"
+site_description: "Collocation of Guide, Technical knowledge, Security, Examples, Tips, at any operating system"
+site_author: "Stas Kosatuhin"
+
+# Repository Link Editor
+repo_name: "fire1ce/3os.org"
+repo_url: "https://github.com/fire1ce/3os.org/"
+edit_uri: "edit/master/src/"
+
+# Theme Configuration
+docs_dir: src
+theme:
+  name: "material"
+  language: en
+  icon:
+    logo: material/chart-donut-variant
+  favicon: /assets/images/favicon.ico
+  palette:
+    primary: "blue grey"
+    accent: "blue"
+  features:
+    - tabs
+    - instant
+  font:
+    text: "Ubuntu"
+    code: "Ubuntu Mono"
+
+# Social Links and Comments
+extra:
+  disqus: "3os"
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/fire1ce
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/stas-yakobov
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/3os.org
+
+extra_javascript:
+  - "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"
+
+# Markdown Rendering Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.sane_lists
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.def_list
+  - markdown.extensions.abbr
+  - markdown.extensions.tables
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.toc:
+      permalink: True
+      separator: "_"
+  - pymdownx.extra
+  - pymdownx.arithmatex
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tilde
+  - pyembed.markdown
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+
+  # list of extensions https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+      lang:
+        - en
+  - git-revision-date-localized
+  - minify:
+      minify_html: true
+# Google Analytics
+google_analytics:
+  - "UA-122318911-1"
+  - "auto"
+
+# Copyright
+copyright: "Copyright &copy; 3os.org @2018"

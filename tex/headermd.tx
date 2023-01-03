@@ -1,0 +1,14 @@
+
+
+<!--
+subtitle: Documentation e-carnet de maternelle
+institute: TR e-solutions
+abstract: Logiciel pour produire le carnet de suivi des apprentissages du cycle 1.
+date: 1er janvier 2020
+toc: yes
+lang: fr
+version: 1.0.3
+\listoffigures
+--> 
+
+<book>
